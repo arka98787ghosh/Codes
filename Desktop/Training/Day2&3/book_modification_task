@@ -1,0 +1,5 @@
+use
+
+:g/ is /s// are /g
+and then 
+:g/ is[^a-z]/s// are /g

@@ -1,0 +1,90 @@
+directory and folder are used interchangably and means the same thing.
+1) pwd- print working drectory : prints the path to the current directory you are in.
+
+2) hostname- shows the computer's network hostname
+
+3) mkdir- make directory : create a directory within the current directory. use mkdir -p to create multiple directories in one go. use "" to give names with space.
+
+4) cd - change directory : change to the required folder. cd .. takes you to parent directory. cd "child directory name" to go to immediate child directory. use child1/child2/child3 to go to successors. cd ../../.. to go back multiple folders.cd - puts you in previous folder and it can be used to toggle between two folders. cd ~ takes you to home directory in one command.
+
+5) ls - list directory : list all the child directories and files of the current directory. ls -lR tells the time and date when the subdirectories and files were created and also prints something weird.
+
+6) rmdir- remove directory : removes the specified child directory. you can only remove the immediate child directories. you can only remove empty directories.
+
+7) pushd - push directory : saves your current location and goes to the specified directory. does nothing but save the current locaion, take you to a new one, do whatever you like in there, then popd to return to previous directory .same as stack concept. saves location on top. pops location from top. useful in toggling between two directories like cd -
+
+8) popd -  takes the previous location off the stack.
+
+9) touch - creates a new file.
+
+10) cp - copies a file alomg with its contents. can alo copy a file to a specified folder by mentioning its name.to copy a file from one folder to another use cp /home/arka/.....filepath..../ /home/....destinationpath....../ .use cp -r to copy folders with files in them.
+
+11) mv - move or rather rename a file. moving a file to a different folder is simlar to copy; mv filename directoryname/
+
+12) less - displays a file one page at a time. press q to quit
+
+13) cat - displays the entire file at once. cat file1 file2 displays both i.e. concatenates the contents and displays them.
+
+14) rm - removes a file. give the entire file path to remove it if you are not in its parent directory. rm -rf removes files recursively it can delete non-empty folders.
+
+15) 
+$|$
+    The | takes the output from the command on the left, and "pipes" it to the command on the right. In line 1 you see me do that.
+$<$
+    The < will take and send the input from the file on the right to the program on the left. You see me do that in line 2. This does not work in PowerShell.
+$>$
+
+    The > takes the output of the command on the left, then writes it
+
+    to the file on the right. You see me do that on line 9.
+$>>$
+
+    The >> takes the output of the command on the left, then appends it
+
+    to the file on the right.
+
+cat > somefile.txt to write somthing in somefile. close it by ctrl+d.
+
+16) *- wildcard character.useful when you don't remember the full name, want all similar files,.......
+
+17) find . -name "...." -print .finds and print the files matching the criteria in the "  ".
+
+18) grep - used for searching within files. grep (keyword;use " " to search files and sentences) (search domain)
+
+19) man - shows description of a command.
+
+20) apropos- shows potential help with reference to a keyword.
+
+21) env - shows environment.
+
+22) echo- prints some arguments. echo user prints user; echo $USER prints arka.echo $PWD prints the current path.
+
+23) export - defines a variable(called environment variable). export var_name="var_value" 
+    echo $var_name prints the var_value.
+    use unset to destroy the variable.
+
+24) exit - exits cmd
+
+25) xargs- execute arguments. it expects an input from stdin and executes /bin/echo on it. using -d saves delimiters;limit output per line using -n etc see http://www.thegeekstuff.com/2013/12/xargs-examples/.
+
+26) chmod- change permission modifiers.
+     u-user
+     g-group
+     o-others.
+
+     r-read
+     w-write
+     x-execute.
+    
+     chmod u+(-)r filename : gives(removes) user the permission to read,u+(-)rx gives(removes) user the permission to read and execute.
+     chmod u+r,g+x : gives the user permission to read and group the permission to execute.(ignore grammar)
+
+27) chown - Every file is associated with an owner and a group. You can use chown and chgrp commands to change the owner or the group of a particular file or directory.
+     use ls -lart filename to know the owner etc. of a file.
+     chown newowner filename
+      ls -l filename(??).
+
+
+
+see xargs,chmod,chown.learn how to change path.
+

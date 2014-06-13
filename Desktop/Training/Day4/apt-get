@@ -1,0 +1,7 @@
+apt-get: tool for handling packages in linux.
+sudo apt-get update
+sudo apt-get install etc.
+
+
+
+http://linux.die.net/man/8/apt-get

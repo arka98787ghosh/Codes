@@ -1,0 +1,5 @@
+vim- text editor.
+
+cURL- used for transferring files using URL syntax. used for manipulating urls.
+      curl www.xyz.com displays the source code of www.xyz.com.
+

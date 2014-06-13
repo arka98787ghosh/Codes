@@ -1,0 +1,5 @@
+First of all change modifiers for all(user,group,others) as a-rwx chmod a-rwx /blahblah/
+then change the ownership to root using sudo chown root /blahblah/
+then change the ownership to root using sudo chgrp root /blahblah/
+It is necessary to first change the modifiers as once you change the ownership to root you
+are no longer allowed to change the modifiers.

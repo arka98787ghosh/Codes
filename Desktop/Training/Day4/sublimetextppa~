@@ -1,0 +1,17 @@
+sublime text 2 is a text editor.
+
+ppa- personal package archive. it is like an apt repository where you can upload your created packages for others to use. it can be installed and it gets updated as any other ubuntu software package.
+
+sudo add-apt-repository ppa:webupd8team/sublime-text-2
+sudo apt-get update
+
+stable build
+sudo apt-get install sublime-text
+
+developer build
+sudo apt-get install sublime-text-dev
+
+
+http://www.makeuseof.com/tag/ubuntu-ppa-technology-explained/
+
+http://www.webupd8.org/2011/03/sublime-text-2-ubuntu-ppa.html
