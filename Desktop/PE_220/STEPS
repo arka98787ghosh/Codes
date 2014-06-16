@@ -1,0 +1,23 @@
+I have used brute force to compute the position of the cursor after 15258789 steps in D24. Since it 
+is inconvenient to calculate after D25 so the rest of my code just reduces computation on the part 
+of computer by manipulating the result obtained till these many steps(15258789).15258789=(5^12-1)/2^4;
+I observed that the cursor will always be at the same position in any other Di after the same no. 
+of steps.
+
+I had observed that if after N steps in any Di the cursor is at (a,b) then after 2N steps in same or
+any other Di it will be at the position (a+b,b-a).
+
+so to go to 5^12-1 steps I need to do (a+b,b-a) 4 times on the previous result.
+
+To compensate for the 1 step I had seen that after executing several steps the cursor always points 
+downwards. so a forward step downwards is a y=y-1;
+ 
+Then we have position after 5^12 steps say(p,q), form here we need position after 10^12 steps which 
+is  5^12*2^12; i.e all we need to do is (p+q,q-p) 12 times to get the position after 10^12 steps. 
+
+
+
+find position after 15258789 steps in D24.
+do (a+b,b-a) 4 times (adding 4 0s or multiplying by 4 2s)
+go 1 step backwards i.e. subtract 1 from the y coordinate of the above result
+do (a+b,b-a) 12 times.
