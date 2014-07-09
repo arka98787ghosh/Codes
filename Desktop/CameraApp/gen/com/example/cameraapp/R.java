@@ -1071,8 +1071,10 @@ containing a value of this type.
         public static final int cam_button=0x7f020057;
         public static final int cam_button_cropped=0x7f020058;
         public static final int cancel_button_bck=0x7f020059;
-        public static final int ic_launcher=0x7f02005a;
-        public static final int lens=0x7f02005b;
+        public static final int frame=0x7f02005a;
+        public static final int ic_launcher=0x7f02005b;
+        public static final int lens=0x7f02005c;
+        public static final int mask=0x7f02005d;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1092,6 +1094,7 @@ containing a value of this type.
         public static final int camera_button=0x7f05003d;
         public static final int camera_preview=0x7f05003c;
         public static final int cancel_button=0x7f05003f;
+        public static final int captured_image=0x7f050040;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int default_activity_button=0x7f050028;
@@ -1110,6 +1113,7 @@ containing a value of this type.
         public static final int lens=0x7f05003e;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
+        public static final int ll=0x7f050042;
         public static final int middle=0x7f050012;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
@@ -1117,6 +1121,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
+        public static final int save_button=0x7f050041;
         public static final int search_badge=0x7f050032;
         public static final int search_bar=0x7f050031;
         public static final int search_button=0x7f050033;
@@ -1191,7 +1196,8 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
         public static final int activity_main=0x7f030018;
-        public static final int support_simple_spinner_dropdown_item=0x7f030019;
+        public static final int mask_activity=0x7f030019;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
